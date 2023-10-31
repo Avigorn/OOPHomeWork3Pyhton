@@ -13,7 +13,7 @@ class Student(User):
         return self.__student_id
 
     def __str__(self):
-        return (f"Student {{studentId='{self.__student_id}', firstName='{super().getFirstName()}', "
+        return (f"studentId='{self.__student_id}, firstName='{super().getFirstName()}', "
                 f"surName='{super().getSurname()}', patronymic='{super().getPatronymic()}'")
 
     def __lt__(self, other):
