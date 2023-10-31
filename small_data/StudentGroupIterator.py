@@ -15,9 +15,15 @@ class StudentGroupIterator(Student):
         self._students = student_group.getStudents()
         self.__counter = 0
 
+    """
+    Метод получения следующего значения счётчика по отношению студенту
+    """
     def hasNext(self):
         return self.__counter < len(self._students)
 
+    """
+    Метод создания следующего значения счётчика по отношению к студенту
+    """
     def next(self):
         if not self.hasNext():
             return None

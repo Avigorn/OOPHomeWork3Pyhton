@@ -5,11 +5,20 @@ from small_data.StudentGroup import StudentGroup
 from small_data.StudentGroupIterator import StudentGroupIterator
 from small_data.Teacher import Teacher
 
+"""
+Класс тестового запуска Итератора
+"""
+
 
 def testIterator(student_group: StudentGroup):
     group_iterator = StudentGroupIterator(student_group)
     while group_iterator.hasNext():
         print(group_iterator.next())
+
+
+"""
+Головной класс выводящий в консоль результат работы всех прочих классов
+"""
 
 
 class Main:

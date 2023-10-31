@@ -10,15 +10,27 @@ class User:
         self.__surname = surname
         self.__patronymic = patronymic
 
+    """
+    Метод получения Имени пользователя
+    """
     def getFirstName(self):
         return self.__firstname
 
+    """
+    Метод получения Фамилии пользователя
+    """
     def getSurname(self):
         return self.__surname
 
+    """
+    Метод получения Отчества пользователя
+    """
     def getPatronymic(self):
         return self.__patronymic
 
+    """
+    Строчный метод вывода информации о пользователе
+    """
     def __str__(self):
         return "User{" + \
             "firstName='" + self.__firstname + '\'' + \
@@ -26,6 +38,9 @@ class User:
             ", patronymic='" + self.__patronymic + '\'' + \
             '}'
 
+    """
+    Сравнения исходных параметров пользователя с получаемыми
+    """
     def __eq__(self, other):
         if self is other:
             return True
